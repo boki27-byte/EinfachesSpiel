@@ -18,6 +18,7 @@ public class GewinnView extends JFrame {
         rundeLabel.setOpaque(true);
         setzeFarbe(Color.WHITE);
         computerFeld.setEditable(false);
+        nochEinmalButton.setEnabled(false);
 
         add(gesamtLabel);
         add(rundeLabel);
