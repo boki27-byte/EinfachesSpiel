@@ -50,6 +50,11 @@ public class GewinnView extends JFrame {
         gesamtLabel.setText("Gesamt: " + gesamt);
         rundeLabel.setText("Runde: " + runde);
         computerFeld.setText("" + computerZahl);
+        if(runde > 0) {
+            setzeFarbe(new Color(150, 255, 150));
+        } else {
+            setzeFarbe(new Color(255, 150,150));
+        }
     }
 
     public void zuruecksetzen() {
