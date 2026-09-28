@@ -51,6 +51,8 @@ public class GewinnView extends JFrame {
         gesamtLabel.setText("Gesamt: " + gesamt);
         rundeLabel.setText("Runde: " + runde);
         computerFeld.setText("" + computerZahl);
+        eingabeFeld.setEditable(false);
+        nochEinmalButton.setEnabled(true);
     }
 
     public void zuruecksetzen() {
