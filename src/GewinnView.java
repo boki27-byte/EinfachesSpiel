@@ -60,6 +60,8 @@ public class GewinnView extends JFrame {
         computerFeld.setText("");
         rundeLabel.setText("Runde: ");
         setzeFarbe(Color.WHITE);
+        eingabeFeld.setEditable(true);
+        nochEinmalButton.setEnabled(false);
     }
 
     public void zeigeMeldung(String text) {
