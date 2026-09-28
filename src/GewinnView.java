@@ -33,4 +33,33 @@ public class GewinnView extends JFrame {
         gesamtLabel.setBackground(farbe);
         rundeLabel.setBackground(farbe);
     }
+
+    public JTextField getEingabeFeld() {
+        return eingabeFeld;
+    }
+
+    public JButton getNochEinmalButton() {
+        return nochEinmalButton;
+    }
+
+    public String getEingabe() {
+        return eingabeFeld.getText();
+    }
+
+    public void zeigeRunde(int gesamt, int runde, int computerZahl) {
+        gesamtLabel.setText("Gesamt: " + gesamt);
+        rundeLabel.setText("Runde: " + runde);
+        computerFeld.setText("" + computerZahl);
+    }
+
+    public void zuruecksetzen() {
+        eingabeFeld.setText("");
+        computerFeld.setText("");
+        rundeLabel.setText("Runde: ");
+        setzeFarbe(Color.WHITE);
+    }
+
+    public void zeigeMeldung(String text) {
+        JOptionPane.showMessageDialog(this, text);
+    }
 }
