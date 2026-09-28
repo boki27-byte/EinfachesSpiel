@@ -53,6 +53,11 @@ public class GewinnView extends JFrame {
         computerFeld.setText("" + computerZahl);
         eingabeFeld.setEditable(false);
         nochEinmalButton.setEnabled(true);
+        if(runde > 0) {
+            setzeFarbe(new Color(150, 255, 150));
+        } else {
+            setzeFarbe(new Color(255, 150,150));
+        }
     }
 
     public void zuruecksetzen() {
